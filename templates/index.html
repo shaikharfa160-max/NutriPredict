@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>NutriPredict - AI-Based Calorie & Diet Recommendation System</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+
+<body>
+
+    <!-- NAVBAR -->
+
+    <header>
+
+        <div class="container">
+
+            <div class="navbar">
+
+                <div class="brand">
+
+                    <div class="brand-logo">
+                        🥗
+                    </div>
+
+                    <div>
+                        <div class="brand-name">
+                            NutriPredict
+                        </div>
+
+                        <div class="brand-subtitle">
+                            AI-Based Calorie & Diet Recommendation System
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="nav-pill">
+                    ✨ AI Powered Nutrition
+                </div>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- HERO -->
+
+    <section class="hero">
+
+        <div class="container">
+
+            <div class="hero-content">
+
+                <div>
+
+                    <div class="hero-badge">
+                        🤖 Machine Learning Powered
+                    </div>
+
+                    <h1>
+                        Eat Smart.<br>
+                        <span>Live Healthy.</span>
+                    </h1>
+
+                    <p class="hero-description">
+                        NutriPredict is an AI-based calorie and diet
+                        recommendation system that analyzes your personal
+                        information, activity level to estimate your daily calorie requirement
+                        and provide a meal plan according to your selected diet type.
+                    </p>
+
+                    <div class="hero-buttons">
+
+                        <a href="#recommendation" class="hero-button primary">
+                            Get My Recommendation →
+                        </a>
+
+                        <a href="#about" class="hero-button secondary">
+                            Explore NutriPredict
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- HERO VISUAL -->
+
+                <div class="hero-visual">
+
+                    <div class="circle-main">
+
+                        <div class="circle-inner">
+
+                            <div class="emoji">
+                                🥗
+                            </div>
+
+                            <strong>
+                                NutriPredict
+                            </strong>
+
+                            <span>
+                                Smart Nutrition
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="floating-card one">
+
+                        <strong>
+                            🔥 Calories
+                        </strong>
+
+                        <span>
+                            Personalized Target
+                        </span>
+
+                    </div>
+
+
+                    <div class="floating-card two">
+
+                        <strong>
+                            🍽️ Diet Plan
+                        </strong>
+
+                        <span>
+                            Based on Diet Type
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ABOUT  -->
+
+    <section class="section" id="about">
+
+        <div class="container">
+
+            <div class="section-heading">
+
+                <div class="small-title">
+                    ABOUT THE PROJECT
+                </div>
+
+                <h2>
+                    What is NutriPredict?
+                </h2>
+
+                <p>
+                    A simple AI-powered approach to personalized nutrition.
+                </p>
+
+            </div>
+
+
+            <div class="features">
+
+                <!-- AI-BASED PREDICTION -->
+
+                <div class="feature-card">
+
+                    <div class="feature-icon">
+                        🤖
+                    </div>
+
+                    <h3>
+                        AI-Based Prediction
+                    </h3>
+
+                    <p>
+                        Uses a trained machine learning model to estimate
+                        your daily calorie requirement from personal and
+                        activity-related information.
+                    </p>
+
+                </div>
+
+
+                <!-- CALORIE REQUIREMENT -->
+
+                <div class="feature-card">
+
+                    <div class="feature-icon">
+                        🔥
+                    </div>
+
+                    <h3>
+                        Daily Calorie Requirement
+                    </h3>
+
+                    <p>
+                        Estimates the daily calorie requirement using
+                        Random Forest Regression based on the entered
+                        parameters.
+                    </p>
+
+                </div>
+
+
+                <!-- DIET RECOMMENDATION -->
+
+                <div class="feature-card">
+
+                    <div class="feature-icon">
+                        🍽️
+                    </div>
+
+                    <h3>
+                        Diet Recommendation
+                    </h3>
+
+                    <p>
+                        Provides a meal plan based on your selected diet
+                        preference and the predicted daily calorie
+                        requirement.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- RECOMMENDATION FORM -->
+
+    <section class="form-section" id="recommendation">
+
+        <div class="container">
+
+            <div class="form-card">
+
+                <div class="form-header">
+
+                    <h2>
+                        Get Your Personalized Recommendation
+                    </h2>
+
+                    <p>
+                        Enter your details below and let NutriPredict
+                        generate your nutrition recommendation.
+                    </p>
+
+                </div>
+
+
+                <div class="form-grid">
+
+                    <!-- AGE -->
+
+                    <div class="field">
+
+                        <label for="age">
+                            Age
+                        </label>
+
+                        <input type="number" id="age" placeholder="e.g. 21" min="1" max="100">
+
+                    </div>
+
+
+                    <!-- GENDER -->
+
+                    <div class="field">
+
+                        <label for="gender">
+                            Gender
+                        </label>
+
+                        <select id="gender">
+
+                            <option value="" selected disabled>
+                                Select gender
+                            </option>
+
+                            <option value="Male">
+                                Male
+                            </option>
+
+                            <option value="Female">
+                                Female
+                            </option>
+
+                            <option value="Other">
+                                Other
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <!-- HEIGHT -->
+
+                    <div class="field">
+
+                        <label for="height">
+                            Height (cm)
+                        </label>
+
+                        <input type="number" id="height" placeholder="e.g. 170" min="50" max="250">
+
+                    </div>
+
+
+                    <!-- WEIGHT -->
+
+                    <div class="field">
+
+                        <label for="weight">
+                            Weight (kg)
+                        </label>
+
+                        <input type="number" id="weight" placeholder="e.g. 65" min="10" max="300">
+
+                    </div>
+
+
+                    <!-- ACTIVITY -->
+
+                    <div class="field">
+
+                        <label for="activity">
+                            Activity Level
+                        </label>
+
+                        <select id="activity">
+
+                            <option value="" selected disabled>
+                                Select activity level
+                            </option>
+
+                            <option value="1.2">
+                                Sedentary
+                            </option>
+
+                            <option value="1.375">
+                                Lightly Active
+                            </option>
+
+                            <option value="1.55">
+                                Moderately Active
+                            </option>
+
+                            <option value="1.725">
+                                Very Active
+                            </option>
+
+                            <option value="1.9">
+                                Athlete
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <!-- DIET -->
+
+                    <div class="field">
+
+                        <label for="diet">
+                            Diet Preference
+                        </label>
+
+                        <select id="diet">
+
+                            <option value="" selected disabled>
+                                Select diet preference
+                            </option>
+
+                            <option value="Balanced">
+                                Balanced
+                            </option>
+
+                            <option value="Vegetarian">
+                                Vegetarian
+                            </option>
+
+                            <option value="Vegan">
+                                Vegan
+                            </option>
+
+                            <option value="Keto">
+                                Keto
+                            </option>
+
+                            <option value="High Protein">
+                                High Protein
+                            </option>
+
+                            <option value="Mediterranean">
+                                Mediterranean
+                            </option>
+
+                        </select>
+
+                    </div>
+
+                </div>
+
+
+                <div class="button-area">
+
+                    <button class="generate-btn" onclick="generateRecommendation()">
+                        Generate My Recommendation
+                    </button>
+
+                </div>
+
+
+                <div class="loading" id="loading">
+                    ⏳ Generating your personalized recommendation...
+                </div>
+
+
+                <div class="error" id="error"></div>
+
+
+                <!-- RESULTS -->
+
+                <div class="results" id="results">
+
+                    <div class="results-title">
+
+                        <h2>
+                            Your Nutrition Recommendation
+                        </h2>
+
+                        <p>
+                            Personalized insights generated by NutriPredict.
+                        </p>
+
+                    </div>
+
+
+                    <!-- CALORIES -->
+
+                    <div class="calorie-card">
+
+                        <div class="calorie-label">
+                            Estimated Daily Calorie Requirement
+                        </div>
+
+                        <div class="calorie-value" id="calories">
+                            0
+                        </div>
+
+                        <div class="calorie-unit">
+                            kcal / day
+                        </div>
+
+                        <div class="calorie-sub" id="calorieSub">
+                            Predicted using Random Forest Regression
+                        </div>
+
+                    </div>
+
+
+                    <!-- RESULT BOXES -->
+
+                    <div class="result-grid">
+
+                        <div class="result-box">
+
+                            <div class="result-label">
+                                BMI
+                            </div>
+
+                            <div class="result-value" id="bmi">
+                                --
+                            </div>
+
+                            <span class="status" id="bmiStatus">
+                                --
+                            </span>
+
+                        </div>
+
+
+                        <div class="result-box">
+
+                            <div class="result-label">
+                                Daily Water
+                            </div>
+
+                            <div class="result-value" id="water">
+                                --
+                            </div>
+
+                            <span class="status">
+                                Recommended
+                            </span>
+
+                        </div>
+
+
+                        <div class="result-box">
+
+                            <div class="result-label">
+                                Diet Type
+                            </div>
+
+                            <div class="result-value" id="dietResult" style="font-size:17px;">
+                                --
+                            </div>
+
+                            <span class="status">
+                                Selected Diet
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- MACROS -->
+
+                    <div class="result-card">
+
+                        <h3>
+                            Daily Macronutrient Recommendation
+                        </h3>
+
+
+                        <div class="macro-item">
+
+                            <div class="macro-info">
+
+                                <span class="macro-label">
+                                    Protein
+                                </span>
+
+                                <span class="macro-value">
+                                    <span id="protein">0</span> g
+                                </span>
+
+                            </div>
+
+                            <div class="macro-bar">
+
+                                <div class="macro-fill protein-fill"></div>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="macro-item">
+
+                            <div class="macro-info">
+
+                                <span class="macro-label">
+                                    Carbohydrates
+                                </span>
+
+                                <span class="macro-value">
+                                    <span id="carbs">0</span> g
+                                </span>
+
+                            </div>
+
+                            <div class="macro-bar">
+
+                                <div class="macro-fill carbs-fill"></div>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="macro-item">
+
+                            <div class="macro-info">
+
+                                <span class="macro-label">
+                                    Fats
+                                </span>
+
+                                <span class="macro-value">
+                                    <span id="fats">0</span> g
+                                </span>
+
+                            </div>
+
+                            <div class="macro-bar">
+
+                                <div class="macro-fill fats-fill"></div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- MEAL PLAN -->
+
+                    <div class="result-card">
+
+                        <div class="meal-header">
+
+                            <h3>
+                                Personalized Meal Plan
+                            </h3>
+
+                            <span class="diet-badge" id="dietBadge">
+                                Balanced
+                            </span>
+
+                        </div>
+
+
+                        <div class="meal-list" id="mealList"></div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <div class="container">
+
+            <div class="footer-content">
+
+                <div>
+
+                    <div class="footer-brand">
+                        🥗 Nutri<span>Predict</span>
+                    </div>
+
+                    <div class="footer-description">
+                        AI-Based Calorie & Diet Recommendation System
+                    </div>
+
+                </div>
+
+
+                <div class="footer-right">
+
+                    Smart nutrition insights powered by
+                    <br>
+                    Machine Learning
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+
+</html>
